@@ -3626,3 +3626,4 @@ function library:Window(name, hidebutton)
 
     return window
 end
+return library
