@@ -1,4 +1,3 @@
--- (WARNING: This Repository is Licensed! You are not permitted to use/copy this User Interface library or ill go and fuck you by unique)
 local library = { 
 	flags = { }, 
 	items = { } 
@@ -44,7 +43,7 @@ library.theme = {
     itemscolor2 = Color3.fromRGB(210, 210, 210)
 }
 
-function library:Watermark(name, position)
+function library:CreateWatermark(name, position)
     local gamename = marketplaceservice:GetProductInfo(game.PlaceId).Name
     local watermark = { }
     watermark.Visible = true
@@ -404,7 +403,7 @@ function library:Window(name, hidebutton)
     window.OpenedColorPickers = { }
     window.Tabs = { }
 
-    function window:CreateTab(name)
+    function window:Tab(name)
         local tab = { }
         tab.name = name or ""
 
@@ -3627,4 +3626,3 @@ function library:Window(name, hidebutton)
 
     return window
 end
-return library
